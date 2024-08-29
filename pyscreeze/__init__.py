@@ -701,6 +701,7 @@ def center(coords):
     """
 
     # TODO - one day, add code to handle a Box namedtuple.
+    coords = tuple(int(x) for x in coords)
     return Point(coords[0] + int(coords[2] / 2), coords[1] + int(coords[3] / 2))
 
 
